@@ -13,12 +13,14 @@
    <script type="application/x-javascript" src="app.js"></script>
 </head>
 <body>
-   <div class="toolbar">
-      <h1 id="pageTitle"></h1>
-      <a id="backButton" class="button" href="#"></a>
-   </div>
-   <div id="index" title="Index" selected="true">
-      Hello World
-   </div>
+  <div class="toolbar">
+    <h1 id="pageTitle"></h1>
+    <a id="backButton" class="button" href="#"></a>
+  </div>
+  <ul id="content" selected="true">
+  </ul>
+  <script id="client-template" type="text/template">
+    <li class="client-item"><a href="#client-detail"><%= name %> (<%= email %>)</a></li>
+  </script>
 </body>
 </html>
